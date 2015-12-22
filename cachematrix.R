@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Work with cached matrix objects
+## The objects store the results of calculations in memory for reuse.
 
-## Write a short comment describing this function
+## Create a cached matrix object out of a regular matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
@@ -17,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Find the inverse of a cached matrix. Will return cached result if already
+## called before
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
